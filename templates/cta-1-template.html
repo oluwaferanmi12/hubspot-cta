@@ -11,13 +11,17 @@
     <meta name="description" content="{{ content.meta_description }}">
         {{ require_css(get_asset_url('../dist/css/output.css')) }}
         {{ require_css(get_asset_url("../css/font.css")) }}
+        {{ require_css(get_asset_url("../css/main.css")) }}
+        
 
     {{ standard_header_includes }}
   </head>
   <body>
-      {% module "text" path="../modules/text" label="CTA Main Copy" %}
-      {% module "button-plain" path="../modules/button-plain" label="Button Text" %}
-      {% module "coupleImage" path="../modules/coupleImage" label="Main copy images" %}
+
+      {% dnd_area 'dnd_area'  label='CTA-1 Section' %}
+      {% include_dnd_partial path='../sections/cta-section.html' %}
+      {% end_dnd_area %}
+
     {{ standard_footer_includes }}
   </body>
 </html>

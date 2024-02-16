@@ -11,16 +11,13 @@
     {% if brand_settings.primaryFavicon.src %}
       <link rel="shortcut icon" href="{{ brand_settings.primaryFavicon.src }}" />
     {% endif %}
-    {{ require_css(get_asset_url('../dist/css/output.css')) }}
+       {{ require_css(get_asset_url('../dist/css/output.css')) }}
         {{ require_css(get_asset_url("../css/font.css")) }}
+        {{ require_css(get_asset_url("../css/main.css")) }}
     {{ standard_header_includes }}
   </head>
   <body>
-    {% dnd_area "dnd_area"
-      label="Main section"
-    %}
-   
-    {% end_dnd_area %}
+     
     <div class="flex-col-reverse sm:flex-col-reverse md:flex-row lg:flex-row flex ">
        <div class="w-full lg:w-1/2 sm:w-full lg:h-screen h-1/2 min-h-[500px] flex  items-center justify-center bg-[#FFDFB2]">
          <div>
@@ -33,6 +30,8 @@
         {% module "side-image" path="../modules/side-image" label="image for the side" %}
       </div>
     </div>
+    
+    
     {{ standard_footer_includes }}
   </body>
 </html>
