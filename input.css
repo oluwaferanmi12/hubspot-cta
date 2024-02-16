@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: GT_Alpina;
+  src: url("./fonts/GT Alpina/GTAlpina-Light.otf");
+}
+
+@font-face {
+  font-family: Aktiv;
+  src: url("./fonts/Aktiv Grotesk/AktivGrotesk_W_Rg.woff");
+}

@@ -1,0 +1,30 @@
+/* @import url('http://example.com/example_style.css'); */
+
+/***********************************************/
+/* CSS @imports must be at the top of the file */
+/* Add them above this section                 */
+/***********************************************/
+
+/*****************************************/
+/* Start your style declarations here    */
+/*****************************************/
+
+@font-face{
+  font-family: "gtAlpina";
+  src: url("https://143768988.fs1.hubspotusercontent-eu1.net/hubfs/143768988/GTAlpina-Light.otf");
+  font-weight: 700;
+}
+
+@font-face{
+  font-family: "ttpro";
+  src: url("https://143768988.fs1.hubspotusercontent-eu1.net/hubfs/143768988/TT%20Commons%20Pro%20DemiBold.otf");
+  
+}
+
+.ttFont{
+  font-family: ttpro
+}
+
+.gtFont{
+  font-family: gtAlpina;
+}

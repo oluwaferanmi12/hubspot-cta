@@ -1,0 +1,14 @@
+[ {
+  "id" : "c530614a-ce22-6efd-e0d1-ba05677e01e0",
+  "name" : "button_text",
+  "display_width" : null,
+  "label" : "button_text",
+  "help_text" : "A text for the button ",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Optional button"
+} ]

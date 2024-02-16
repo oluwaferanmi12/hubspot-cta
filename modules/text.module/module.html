@@ -1,0 +1,25 @@
+<!-- module html  -->
+<!-- module html  -->
+<div class="flex justify-center flex-wrap flex-col py-6">
+  <div class="text-center ttFont">
+     {% inline_text field="main_copy_group.label_field" value="{{ module.main_copy_group.label_field }}" %}
+  </div>
+  <div class="font-bold text-[#212121] font-semibold text-5xl ttFont justify-center flex items-center">
+    <div class="ttFont text-center lg:w-5/12 md:w-2/5 sm:w-4/5 w-11/12">
+     <span class="inline-block ">
+        {% inline_text field="main_copy_group.left_side_mandatory" value="{{ module.main_copy_group.left_side_mandatory }}" %}
+     </span> 
+     <span class="inline-block gtFont">
+        {% inline_text field="main_copy_group.center_mandatory_text" value="{{ module.main_copy_group.center_mandatory_text }}" %}
+     </span>
+     <span class="inline-block">
+        {% inline_text field="main_copy_group.right_side_mandatory" value="{{ module.main_copy_group.right_side_mandatory }}" %}
+     </span> 
+    </div>    
+  </div>
+  <div class="text-center text-[#1E2526] ttFont text-lg lg:my-0 my-8">
+    {% inline_text field="optional_copy_body" value="{{ module.optional_copy_body }}" %}
+  </div>
+</div>
+
+

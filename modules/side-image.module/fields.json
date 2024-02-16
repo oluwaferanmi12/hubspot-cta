@@ -1,0 +1,22 @@
+[ {
+  "id" : "996b9d0e-37e9-39be-cd9a-f650756d49ff",
+  "name" : "image_field",
+  "display_width" : null,
+  "label" : "Image",
+  "required" : false,
+  "locked" : false,
+  "responsive" : true,
+  "resizable" : true,
+  "show_loading" : false,
+  "type" : "image",
+  "default" : {
+    "size_type" : "exact",
+    "src" : "https://143768988.fs1.hubspotusercontent-eu1.net/hubfs/143768988/full_image.png",
+    "alt" : "full_image",
+    "loading" : "lazy",
+    "width" : 720,
+    "height" : 720,
+    "max_width" : 720,
+    "max_height" : 720
+  }
+} ]

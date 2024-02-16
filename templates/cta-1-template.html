@@ -1,0 +1,23 @@
+<!--
+    templateType: page
+    label: Page template
+    isAvailableForNewContent: true
+-->
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>{{ content.html_title }}</title>
+    <meta name="description" content="{{ content.meta_description }}">
+        {{ require_css(get_asset_url('../dist/css/output.css')) }}
+        {{ require_css(get_asset_url("../css/font.css")) }}
+
+    {{ standard_header_includes }}
+  </head>
+  <body>
+      {% module "text" path="../modules/text" label="CTA Main Copy" %}
+      {% module "button-plain" path="../modules/button-plain" label="Button Text" %}
+      {% module "coupleImage" path="../modules/coupleImage" label="Main copy images" %}
+    {{ standard_footer_includes }}
+  </body>
+</html>

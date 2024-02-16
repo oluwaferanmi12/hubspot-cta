@@ -1,0 +1,30 @@
+
+<div class="flex sm:flex-col flex-col md:flex-row lg:flex-row justify-center my-8 px-4">
+   {% for item in module.cta_image %}
+    {% if item.src %}
+      {% set sizeAttrs = 'width="{{ item.width }}" height="{{ item.height }}"' %}
+      {% if item.size_type == 'auto' %}
+        {% set sizeAttrs = 'width="{{ item.width }}" height="{{ item.height }}" style="max-width: 100%; height: auto;"' %}
+      {% elif item.size_type == 'auto_custom_max' %}
+        {% set sizeAttrs = 'width="{{ item.max_width }}" height="{{ item.max_height }}" style="max-width: 100%; height: auto;"' %}
+      {% endif %}
+       {% set loadingAttr = item.loading != 'disabled' ? 'loading="{{ item.loading }}"' : '' %}
+      <div class="overflow-hidden mr-2 relative my-4 lg:my-0">
+        <div class="absolute flex bottom-0 w-full py-8 floating_background ">
+        </div>
+        <div class="absolute bottom-6 w-full flex justify-between px-2 pr-6 items-center">
+            <span class="px-4 text-white text-lg ttFont">
+              {% inline_text field="image_main_copy" value="{{ module.image_main_copy }}" %}
+              <span class="colorFade ttFont">
+                {% inline_text field="supporting_text" value="{{ module.supporting_text }}" %}
+              </span>
+            </span>
+            <button class="border py-4 px-4 rounded-md borderFade mr-4">
+               <img src="https://143768988.fs1.hubspotusercontent-eu1.net/hubfs/143768988/Group-1.png" alt="right_icon" />
+            </button>
+        </div>
+        <img class="rounded-md w-full" src="{{ item.src }}" alt="{{ item.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+      </div>
+    {% endif %}
+  {% endfor %}
+</div>

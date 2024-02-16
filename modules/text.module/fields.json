@@ -1,0 +1,82 @@
+[ {
+  "id" : "01dff931-417b-3cb0-7795-5d0ee311aefc",
+  "name" : "main_copy_group",
+  "display_width" : null,
+  "label" : "main_copy_group",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "0d9fe676-8081-5d9c-258a-e66d1538a20d",
+    "name" : "label_field",
+    "display_width" : null,
+    "label" : "label_field",
+    "help_text" : "label at the top of the cta-text",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "label"
+  }, {
+    "id" : "399757b9-9747-fc94-6509-0a37e7942210",
+    "name" : "left_side_mandatory",
+    "display_width" : null,
+    "label" : "left side_mandatory",
+    "help_text" : "the left side of the main body",
+    "required" : true,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "Mandatory title about the "
+  }, {
+    "id" : "652a8673-70e1-56f1-e348-2779f0cf2cbc",
+    "name" : "center_mandatory_text",
+    "display_width" : null,
+    "label" : "center mandatory text",
+    "help_text" : "The center text for the main copy",
+    "required" : true,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "call-to-action"
+  }, {
+    "id" : "04410890-9535-c46e-bdab-2ef10397e4bd",
+    "name" : "right_side_mandatory",
+    "display_width" : null,
+    "label" : "right_side_mandatory",
+    "help_text" : "The right hand text of the copy",
+    "required" : true,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "here"
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : {
+    "label_field" : "label",
+    "left_side_mandatory" : "Mandatory title about the ",
+    "center_mandatory_text" : "call-to-action",
+    "right_side_mandatory" : "here"
+  }
+}, {
+  "id" : "10b0889e-638e-7dc8-1732-4ecf8bf6b8cd",
+  "name" : "optional_copy_body",
+  "display_width" : null,
+  "label" : "optional copy body",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Optional body copy goes here"
+} ]

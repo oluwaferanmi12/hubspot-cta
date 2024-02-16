@@ -1,0 +1,62 @@
+[ {
+  "id" : "99056c32-5a30-517b-ca04-bc8cbd81183f",
+  "name" : "cta_image",
+  "display_width" : null,
+  "label" : "cta_image",
+  "required" : false,
+  "locked" : false,
+  "occurrence" : {
+    "min" : 2,
+    "max" : 2,
+    "sorting_label_field" : null,
+    "default" : 2
+  },
+  "responsive" : true,
+  "resizable" : true,
+  "show_loading" : false,
+  "type" : "image",
+  "default" : [ {
+    "size_type" : "auto",
+    "src" : "https://143768988.fs1.hubspotusercontent-eu1.net/hubfs/143768988/coupleimage.png",
+    "alt" : "coupleimage",
+    "loading" : "lazy",
+    "width" : 644,
+    "height" : 515,
+    "max_width" : 644,
+    "max_height" : 515
+  }, {
+    "size_type" : "auto",
+    "src" : "https://143768988.fs1.hubspotusercontent-eu1.net/hubfs/143768988/coupleimage.png",
+    "alt" : "coupleimage",
+    "loading" : "lazy",
+    "width" : 644,
+    "height" : 515,
+    "max_width" : 644,
+    "max_height" : 515
+  } ]
+}, {
+  "id" : "801acfcb-2755-769b-b155-6c60ced3ff13",
+  "name" : "image_main_copy",
+  "display_width" : null,
+  "label" : "image_main_copy",
+  "help_text" : "Main text to inform about the button",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Title"
+}, {
+  "id" : "c1d109c4-b4ea-e047-8981-fd4a45ce5852",
+  "name" : "supporting_text",
+  "display_width" : null,
+  "label" : "supporting text",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Supporting text about the call-to-action goes here"
+} ]
